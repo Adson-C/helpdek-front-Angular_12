@@ -28,7 +28,7 @@ import { MatListModule } from '@angular/material/list';
 import { MatCardModule } from '@angular/material/card';
 
 // Componentes do projeto
-import { NavComponent } from './Components/nav/nav.component';
+import { NavComponent } from './components/nav/nav.component';
 import { HomeComponent } from './components/home/home.component';
 
 
