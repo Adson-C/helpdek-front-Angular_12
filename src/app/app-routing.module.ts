@@ -13,7 +13,7 @@ const routes: Routes = [
   {
     path: '', component: NavComponent, canActivate: [AuthGuard] ,children: [ 
       { path: 'home', component: HomeComponent}, // rota filha componente nav
-      { path: 'tecnicos', component: TecnicoListComponent}
+      { path: 'tecnicos',  component: TecnicoListComponent}
     ]
   }
 ];
