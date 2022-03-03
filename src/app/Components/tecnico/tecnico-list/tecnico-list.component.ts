@@ -16,9 +16,8 @@ export class TecnicoListComponent implements OnInit {
   displayedColumns: string[] = ['id', 'nome', 'cpf', 'email', 'acoes'];
   dataSource = new MatTableDataSource<Tecnico>(this.ELEMENT_DATA);
 
-  
   @ViewChild(MatPaginator) paginator: MatPaginator;
-  
+
   constructor(
     private service: TecnicoService
   ) { }
@@ -30,7 +29,7 @@ export class TecnicoListComponent implements OnInit {
   findAll() {
     this.service.findAll().subscribe(resposta => {
       this.ELEMENT_DATA = resposta
-      this.dataSource = new MatTableDataSource<Tecnico>(this.ELEMENT_DATA);
+      this.dataSource = new MatTableDataSource<Tecnico>(resposta);
       this.dataSource.paginator = this.paginator;
     })
   }

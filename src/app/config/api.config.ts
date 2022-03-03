@@ -1,3 +1,3 @@
 export const API_CONFIG = {
-    baseUrl : 'https://spring-helpdesk.herokuapp.com'
+    baseUrl : 'https://ads-helpdesks-prod.herokuapp.com'
 }
