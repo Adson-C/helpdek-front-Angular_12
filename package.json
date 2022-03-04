@@ -4,7 +4,6 @@
   "scripts": {
     "ng": "ng",
     "start": "node serve.js",
-    "build": "ng build",
     "watch": "ng build --aot --prod"
   },
   "engines": {
