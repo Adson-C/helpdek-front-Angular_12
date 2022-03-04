@@ -21,26 +21,26 @@ import { ChamadoReadComponent } from './components/chamado/chamado-read/chamado-
 
 
 const routes: Routes = [
-  { path: 'login', component: LoginComponent},
+  { path: 'login', component: LoginComponent },
   {
-    path: '', component: NavComponent, canActivate: [AuthGuard] ,children: [ 
-      { path: 'home',                 component: HomeComponent}, // rota filha componente nav
+    path: '', component: NavComponent, canActivate: [AuthGuard], children: [
+      { path: 'home', component: HomeComponent }, // rota filha componente nav
 
-      { path: 'tecnicos',             component: TecnicoListComponent},
-      { path: 'tecnicos/create',      component: TecnicoCreateComponent},
-      { path: 'tecnicos/update/:id',  component: TecnicoUpdateComponent},
-      { path: 'tecnicos/delete/:id',  component: TecnicoDeleteComponent},
+      { path: 'tecnicos', component: TecnicoListComponent },
+      { path: 'tecnicos/create', component: TecnicoCreateComponent },
+      { path: 'tecnicos/update/:id', component: TecnicoUpdateComponent },
+      { path: 'tecnicos/delete/:id', component: TecnicoDeleteComponent },
 
-      { path: 'clientes',             component: ClienteListComponent},
-      { path: 'clientes/create',      component: ClienteCreateComponent},
-      { path: 'clientes/update/:id',  component: ClienteUpdateComponent},
-      { path: 'clientes/delete/:id',  component: ClienteDeleteComponent},
+      { path: 'clientes', component: ClienteListComponent },
+      { path: 'clientes/create', component: ClienteCreateComponent },
+      { path: 'clientes/update/:id', component: ClienteUpdateComponent },
+      { path: 'clientes/delete/:id', component: ClienteDeleteComponent },
 
 
-      { path: 'chamados',             component: ChamadoListComponent},
-      { path: 'chamados/create',      component: ChamadoCreateComponent},
-      { path: 'chamados/update/:id',   component: ChamadoUpdateComponent},
-      { path: 'chamados/read/:id',    component: ChamadoReadComponent},
+      { path: 'chamados', component: ChamadoListComponent },
+      { path: 'chamados/create', component: ChamadoCreateComponent },
+      { path: 'chamados/update/:id', component: ChamadoUpdateComponent },
+      { path: 'chamados/read/:id', component: ChamadoReadComponent },
     ]
   }
 ];
