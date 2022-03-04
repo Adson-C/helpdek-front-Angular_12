@@ -1,8 +1,8 @@
-import { Cliente } from 'src/app/models/cliente';
 import { Component, OnInit } from '@angular/core';
 import { FormControl, Validators } from '@angular/forms';
-import { ClienteService } from 'src/app/services/cliente.service';
 import { ToastrService } from 'ngx-toastr';
+import { ClienteService } from './../../../services/cliente.service';
+import { Cliente } from './../../../models/cliente';
 import { ActivatedRoute, Router } from '@angular/router';
 @Component({
   selector: 'app-cliente-update',

@@ -1,12 +1,13 @@
+import { TecnicoService } from './../../../services/tecnico.service';
+import { ClienteService } from './../../../services/cliente.service';
+import { ChamadoService } from './../../../services/chamado.service';
+import { Tecnico } from './../../../models/tecnico';
+import { Cliente } from './../../../models/cliente';
+import { Chamado } from './../../../models/chamado';
 import { Router, ActivatedRoute } from '@angular/router';
-import { Chamado } from 'src/app/models/chamado';
-import { ChamadoService } from 'src/app/services/chamado.service';
-import { TecnicoService } from 'src/app/services/tecnico.service';
-import { ClienteService } from 'src/app/services/cliente.service';
+
 import { Component, OnInit } from '@angular/core';
 import { FormControl, Validators } from '@angular/forms';
-import { Cliente } from 'src/app/models/cliente';
-import { Tecnico } from 'src/app/models/tecnico';
 import { ToastrService } from 'ngx-toastr';
 
 @Component({

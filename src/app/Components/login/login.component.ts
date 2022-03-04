@@ -1,9 +1,9 @@
-import { AuthService } from './../../services/auth.service';
 import { Component, OnInit } from '@angular/core';
 import { FormControl, Validators } from '@angular/forms';
+import { Credenciais } from './../../models/credenciais';
+import { AuthService } from './../../services/auth.service';
 import { Router } from '@angular/router';
 import { ToastrService } from 'ngx-toastr';
-import { Credenciais } from 'src/app/models/credenciais';
 
 @Component({
   selector: 'app-login',

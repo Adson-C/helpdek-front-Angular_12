@@ -1,8 +1,8 @@
+import { ChamadoService } from './../../../services/chamado.service';
+import { Chamado } from './../../../models/chamado';
 import { Component, OnInit } from '@angular/core';
 import {  ActivatedRoute } from '@angular/router';
 import { ToastrService } from 'ngx-toastr';
-import { Chamado } from 'src/app/models/chamado';
-import { ChamadoService } from 'src/app/services/chamado.service';
 
 @Component({
   selector: 'app-chamado-read',
