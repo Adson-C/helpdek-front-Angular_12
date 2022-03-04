@@ -3,9 +3,13 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "node serve.js",
     "build": "ng build",
-    "watch": "ng build --watch --configuration development"
+    "watch": "ng build --aot --prod"
+  },
+  "engines": {
+    "node": "14.17.5",
+    "npm": "6.14.14"
   },
   "private": true,
   "dependencies": {
@@ -20,8 +24,10 @@
     "@angular/platform-browser-dynamic": "~12.0.3",
     "@angular/router": "~12.0.3",
     "@auth0/angular-jwt": "^5.0.2",
+    "express": "^4.17.3",
     "ngx-mask": "^13.1.1",
     "ngx-toastr": "^14.2.1",
+    "path": "^0.12.7",
     "rxjs": "~6.6.0",
     "tslib": "^2.1.0",
     "zone.js": "~0.11.4"
