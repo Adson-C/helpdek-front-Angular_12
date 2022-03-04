@@ -15,6 +15,7 @@ import { ToastrService } from 'ngx-toastr';
   styleUrls: ['./chamado-update.component.css']
 })
 export class ChamadoUpdateComponent implements OnInit {
+  
   chamado: Chamado = {
     prioridade: '',
     status: '',
